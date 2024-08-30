@@ -1,7 +1,69 @@
 1.设置环境
 （1）使用windows11系统安装WSL2（Windows Subsystem for Linux）
-    在管理员模式下打开Windows 命令提示符，输入命令：wsl --install 
+    以管理员身份运行Windows命令提示符，输入命令：wsl --install 
     按提示输入姓名，密码，安装完成后重启系统。
+    打开Microsoft Store商店，搜索Ubuntu，下载Ubuntu 24.04 LTS，下载完成点击打开按钮，按提示输入姓名，密码，安装完成后重启系统。
+    wsl -l -v  //展示系统列表
+    wsl --unregister  Ubuntu  //删除默认安装的Ubuntu系统，保留最新系统Ubuntu-24.04
+    wsl --set-default-version 2  //设置WSL系统默认版本为2
+    sudo apt update && sudo apt upgrade //更新和升级软件包
+    打开Microsoft Store商店，搜索Windows Terminal，安装终端窗口，以后都使用此窗口，方便windows命令窗口和WSL系统窗口切换。
+（2）配置WSL系统网络，与windows系统网络镜像
+    在C:\用户\用户名   文件夹内创建一个记事本，记事本内容为
+    [wsl2]
+    networkingMode=mirrored
+    保存后把记事本文件名改为.wslconfig
+    wsl --shutdown //关闭WSL系统，8秒后再打开WSL系统
+（3）安装zsh/oh-my-zsh
+    zsh 配合 oh-my-zsh 和相关插件，可以实现命令高亮、命令补全、git 快捷操作等等。
+    # 更新 package
+    sudo apt update && sudo apt upgrade
+
+    # 安装 zsh
+    sudo apt install zsh -y
+
+    # 安装 oh-my-zsh
+    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+
+    # 安装命令补全和高亮插件
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+    sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g' ~/.zshrc
+
+    # 将 zsh 设置为默认的shell
+    chsh -s /bin/zsh 
+  
+    编辑配置文件vim .zshrc，不习惯 vim 的话，可以用 VSCode 打开code .zshrc，在最后加入：
+   # 列表形式显示所有文件详情
+    alias ll="ls -alF"
+    # 删除文件前需确认
+    alias rm="rm -i"
+（4）配置Git
+    Git 默认会忽略大小写，所以需要修改配置。
+    # 启用大小写敏感
+    git config --global core.ignorecase false
+   
+    常规配置：
+    # 配置用户名和密码
+    git config --global user.name "Your Name"
+    git config --global user.email "youremail@domain.com"
+  （5）安装nvm/node/npm
+     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+     nvm install 20
+     node -v
+     npm -v
+ （6）VSCode
+   安装远程开发扩展包https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+   Node.js扩展包https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack
+    
+ 
+ 
+
+    
+
+    
+
+
 
 
 
