@@ -1,1 +1,9 @@
+1.设置环境
+（1）使用windows11系统安装WSL2（Windows Subsystem for Linux）
+    在管理员模式下打开Windows 命令提示符，输入命令：wsl --install 
+    按提示输入姓名，密码，安装完成后重启系统。
+
+
+
+
 
