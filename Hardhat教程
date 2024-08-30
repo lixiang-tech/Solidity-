@@ -47,14 +47,18 @@
     # 配置用户名和密码
     git config --global user.name "Your Name"
     git config --global user.email "youremail@domain.com"
-  （5）安装nvm/node/npm
+（5）安装nvm/node/npm
      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
      nvm install 20
      node -v
      npm -v
- （6）VSCode
+（6）VSCode
    安装远程开发扩展包https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
    Node.js扩展包https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack
+（7）文件系统
+    需要注意的是我们现在有了两套系统，两者的文件类型并不一致，跨系统访问和传输文件的话效率会下降很多，最好各存各的，以用户目录为例：
+    如果在 Windows 上开发，就将文件放在：C:\Users\<UserName>\
+    如果在 Ubuntu 上开发，就将文件放在：\\wsl$\ubuntu\home\<UserName>\
     
  
  
