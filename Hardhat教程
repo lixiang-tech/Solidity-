@@ -55,6 +55,7 @@
 （6）VSCode
    安装远程开发扩展包https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
    Node.js扩展包https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack
+   使用code . 命令打开VSCode，注意窗口左下角显示WSL：Ubuntu-24.04
 （7）文件系统
     需要注意的是我们现在有了两套系统，两者的文件类型并不一致，跨系统访问和传输文件的话效率会下降很多，最好各存各的，以用户目录为例：
     如果在 Windows 上开发，就将文件放在：C:\Users\<UserName>\
