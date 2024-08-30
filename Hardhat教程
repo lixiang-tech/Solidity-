@@ -12,7 +12,9 @@
     在C:\用户\用户名   文件夹内创建一个记事本，记事本内容为
     [wsl2]
     networkingMode=mirrored
-    保存后把记事本文件名改为.wslconfig
+    
+    保存记事本，把文件名改为.wslconfig
+
     wsl --shutdown //关闭WSL系统，8秒后再打开WSL系统
 （3）安装zsh/oh-my-zsh
     zsh 配合 oh-my-zsh 和相关插件，可以实现命令高亮、命令补全、git 快捷操作等等。
