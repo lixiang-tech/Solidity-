@@ -62,6 +62,59 @@
     需要注意的是我们现在有了两套系统，两者的文件类型并不一致，跨系统访问和传输文件的话效率会下降很多，最好各存各的，以用户目录为例：
     如果在 Windows 上开发，就将文件放在：C:\Users\<UserName>\
     如果在 Ubuntu 上开发，就将文件放在：\\wsl$\ubuntu\home\<UserName>\
+2.部署合约
+（1）创建项目文件
+打开命令窗口输入一下命令：
+mkdir todolist  //创建一个todolist文件夹
+cd todolist  //转到todolist文件夹
+npm init -y //创建空项⽬ 
+npm i -D hardhat //安装hardhat依赖 
+npx hardhat init  // hardhat 初始化JavaScript项⽬
+在 Visual Studio Code 中，打开 todolist 文件夹。
+在 Visual Studio Code 中的 contracts 目录中创建⼀个文件，将其命名为 TodoList.sol。（添加solidity代码）
+
+（2）添加测试代码
+在 ignition/modules 文件夹中创建 TodoList.js 文件。（测试用的javascript代码。）
+在主项目目录中，打开 hardhat.config.js。粘贴如下代码：
+require("@nomicfoundation/hardhat-toolbox"); 
+/** @type import('hardhat/config').HardhatUserConfig */ 
+module.exports = { 
+solidity: "0.8.24", 
+networks: { 
+hardhat: {}, 
+}, 
+};
+（3）部署合约
+npx hardhat node  //启动本地网络
+npx hardhat ignition deploy ./ignition/modules/TodoList.js --network localhost  //在新的命令行中将TodoList.js部署到本地网络
+
+（4）添加部署到Sepolia测试网的配置信息
+使用环境变量保存隐私信息
+npm install dotenv --save //为了在 hardhat 中使用环境变量，安装 dotenv
+打开VS Code，在项目根目录下创建⼀个文件名为 .env 的文件，添加如下代码
+INFURA_ID=***   
+PRIVATE_KEY=**    
+用来存储敏感信息和配置变量，PRIVATE_KEY( 我们的账户私钥信息从metamask 获取) 以及 INFURA_ID（从 Infura 官网注册账号获取 ）
+在配置⽂件 hardhat.config.js 中，加入 Sepolia 的配置
+require("@nomicfoundation/hardhat-toolbox"); 
+require("dotenv").config(); 
+/** @type import('hardhat/config').HardhatUserConfig */ 
+module.exports = { 
+solidity: "0.8.24", 
+networks: { 
+hardhat: {}, 
+sepolia: { 
+url:
+ "https://sepolia.infura.io/v3/" + process.env.INFURA_ID, accounts: [`0x${process.env.PRIVATE_KEY}`], 
+ }, 
+ }, 
+ };
+（5）部署到Sepolia测试网
+npx hardhat ignition deploy ./ignition/modules/TodoList.js --network sepolia  //在新的命令行中将TodoList.js部署到Sepolia
+
+
+
+
     
  
  
