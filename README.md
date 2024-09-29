@@ -103,7 +103,8 @@ contract Token {
 ```shell
 npx hardhat compile
 ```
-![image](https://github.com/user-attachments/assets/e9d18e40-512e-4a9b-99cc-b8aca4e7cee3)
+![image](https://github.com/user-attachments/assets/563c2790-b75c-4019-9b77-38e097839f24)
+
 # Testing contracts
 ## 1.Create a file inside the ./test directory called Token.js. Paste the code below into the file
 ```shell
