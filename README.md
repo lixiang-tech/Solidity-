@@ -13,7 +13,10 @@ npm init -y
 # 3.install Hardhat
 ```shell
 npm install --save-dev hardhat
+```
+# 4.Run Hardhat
+```shell
 npx hardhat init
 ```
-# 4.Select Create an empty hardhat.config.js 
+# 5.Select Create an empty hardhat.config.js 
 
