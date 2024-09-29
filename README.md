@@ -141,7 +141,8 @@ const TokenModule = buildModule("TokenModule", (m) => {
 
 module.exports = TokenModule;
 ```
-![image](https://github.com/user-attachments/assets/1d6f43d6-ee09-4fec-b995-1a18a4b7f558)
+![image](https://github.com/user-attachments/assets/8573cf60-5927-4cb9-8de5-f403582f10e2)
+
 ## 2.Replace the code below into the file hardhat.config.js
 ```shell
 require("@nomicfoundation/hardhat-toolbox"); 
