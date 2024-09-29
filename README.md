@@ -20,7 +20,11 @@ npx hardhat init
 ```
 ## 5.Select Create a JavaScript project
 ![image](https://github.com/user-attachments/assets/f21173fa-4449-434f-b329-b5faba1efee5)
-## 6.Open the VScode
+## 6.installing Hardhat Plugins
+```shell
+npm install --save-dev @nomicfoundation/hardhat-toolbox
+```
+## 7.Open the VScode
 ```shell
 code .
 ```
