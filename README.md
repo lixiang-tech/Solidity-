@@ -1,6 +1,5 @@
 # References
-https://hardhat.org/tutorial/creating-a-new-hardhat-project
-
+https://hardhat.org/tutorial
 # 1.Create a new folder
 ```shell
 mkdir hardhat-tutorial
@@ -12,7 +11,7 @@ npm init -y
 ```
 # 3.Install Hardhat
 ```shell
-npm install --save-dev hardhat
+npm i -D hardhat
 ```
 # 4.Run Hardhat
 ```shell
