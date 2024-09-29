@@ -1,5 +1,2 @@
-Solidity经典用例
-
-区块链概念简介
-
-Hardhat教程
+#references
+https://hardhat.org/tutorial/creating-a-new-hardhat-project
