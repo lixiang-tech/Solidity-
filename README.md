@@ -94,7 +94,7 @@ contract Token {
     }
 }
 ```
-![image](https://github.com/user-attachments/assets/344173cf-3390-467c-af53-0194f505e674)
+![image](https://github.com/user-attachments/assets/2ca57031-e113-40f0-8859-56d276f608bd)
 ## 2.Compiling contracts
 ```shell
 npx hardhat compile
@@ -116,7 +116,7 @@ describe("Token contract", function () {
   });
 });
 ```
-![image](https://github.com/user-attachments/assets/3db34aa8-ac3c-41eb-bb50-50b181b757f9)
+![image](https://github.com/user-attachments/assets/274d9602-a085-478d-aa9b-d1642351ddea)
 ## 2.In your terminal run npx hardhat test. You should see the following output
 ```shell
 npx hardhat test
@@ -135,7 +135,7 @@ const TokenModule = buildModule("TokenModule", (m) => {
 
 module.exports = TokenModule;
 ```
-![image](https://github.com/user-attachments/assets/d66f2839-dfbf-456b-a907-9e1963ff9fb7)
+![image](https://github.com/user-attachments/assets/1d6f43d6-ee09-4fec-b995-1a18a4b7f558)
 ## 2.Replace the code below into the file hardhat.config.js
 ```shell
 require("@nomicfoundation/hardhat-toolbox"); 
@@ -147,6 +147,7 @@ hardhat: {},
 }, 
 };
 ```
+![image](https://github.com/user-attachments/assets/80447744-f130-4ec1-b790-ac3ad72df972)
 ## 3.Start the local network
 ```shell
 npx hardhat node
