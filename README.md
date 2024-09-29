@@ -126,7 +126,8 @@ describe("Token contract", function () {
 ```shell
 npx hardhat test
 ```
-![image](https://github.com/user-attachments/assets/5912e04f-9e59-4db8-9d12-b8a9b39ab70d)
+![image](https://github.com/user-attachments/assets/96a411dc-97c3-4d44-9c0e-8f9d1035830b)
+
 # Deploying to localhost network
 ## 1.Create a file inside the ./ignition/modules directory called Token.js. Paste the code below into the file
 ```shell
