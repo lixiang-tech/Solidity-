@@ -142,6 +142,18 @@ npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost
 ```
 ![image](https://github.com/user-attachments/assets/6dec1d88-9d92-4961-8997-68cab1b32247)
+# Deploying to remote networks. We’ll use Sepolia for this example.
+## 1.To use environment variables to save sensitive information in Hardhat, install dotenv.
+```shell
+npm install dotenv --save
+```
+## 2.Open VS Code, create a file named .env in the root directory of the project, and add the INFURA_ID and PRIVATE_KEY
+```shell
+INFURA_ID=***   
+PRIVATE_KEY=**
+```
+
+
 
 
 
