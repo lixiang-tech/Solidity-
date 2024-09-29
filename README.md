@@ -25,7 +25,7 @@ npx hardhat init
 code .
 ```
 # Writing and compiling smart contracts
-## 1.Create a file inside the contracts called Token.sol. Paste the code below into the file
+## 1.Create a file inside the ./contracts directory called Token.sol. Paste the code below into the file
 ```shell
 //SPDX-License-Identifier: UNLICENSED
 
@@ -101,7 +101,7 @@ npx hardhat compile
 ```
 ![image](https://github.com/user-attachments/assets/e9d18e40-512e-4a9b-99cc-b8aca4e7cee3)
 # Testing contracts
-## 1.Create a file inside the test called Token.js. Paste the code below into the file
+## 1.Create a file inside the ./test directory called Token.js. Paste the code below into the file
 ```shell
 const { expect } = require("chai");
 
@@ -119,6 +119,31 @@ describe("Token contract", function () {
 ![image](https://github.com/user-attachments/assets/3db34aa8-ac3c-41eb-bb50-50b181b757f9)
 ## 2.In your terminal run npx hardhat test. You should see the following output
 ![image](https://github.com/user-attachments/assets/5912e04f-9e59-4db8-9d12-b8a9b39ab70d)
+# Deploying to localhost network
+## 1.Create a file inside the ./ignition/modules directory called Token.js. Paste the code below into the file
+```shell
+const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
+
+const TokenModule = buildModule("TokenModule", (m) => {
+  const token = m.contract("Token");
+
+  return { token };
+});
+
+module.exports = TokenModule;
+```
+![image](https://github.com/user-attachments/assets/d66f2839-dfbf-456b-a907-9e1963ff9fb7)
+## 2.Start the local network
+```shell
+npx hardhat node
+```
+## 3.Open a new terminal and enter the following command to deploy to the local network
+```shell
+npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost
+```
+![image](https://github.com/user-attachments/assets/6dec1d88-9d92-4961-8997-68cab1b32247)
+
+
 
 
 
