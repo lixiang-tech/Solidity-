@@ -18,5 +18,5 @@ npm install --save-dev hardhat
 ```shell
 npx hardhat init
 ```
-# 5.Select Create an empty hardhat.config.js 
+# 5.Select Create a JavaScript project
 
