@@ -118,6 +118,9 @@ describe("Token contract", function () {
 ```
 ![image](https://github.com/user-attachments/assets/3db34aa8-ac3c-41eb-bb50-50b181b757f9)
 ## 2.In your terminal run npx hardhat test. You should see the following output
+```shell
+npx hardhat test
+```
 ![image](https://github.com/user-attachments/assets/5912e04f-9e59-4db8-9d12-b8a9b39ab70d)
 # Deploying to localhost network
 ## 1.Create a file inside the ./ignition/modules directory called Token.js. Paste the code below into the file
@@ -133,11 +136,22 @@ const TokenModule = buildModule("TokenModule", (m) => {
 module.exports = TokenModule;
 ```
 ![image](https://github.com/user-attachments/assets/d66f2839-dfbf-456b-a907-9e1963ff9fb7)
-## 2.Start the local network
+## 2.Replace the code below into the file hardhat.config.js
+```shell
+require("@nomicfoundation/hardhat-toolbox"); 
+/** @type import('hardhat/config').HardhatUserConfig */ 
+module.exports = { 
+solidity: "0.8.24", 
+networks: { 
+hardhat: {}, 
+}, 
+};
+```
+## 3.Start the local network
 ```shell
 npx hardhat node
 ```
-## 3.Open a new terminal and enter the following command to deploy to the local network
+## 4.Open a new terminal and enter the following command to deploy to the local network
 ```shell
 npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost
 ```
