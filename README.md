@@ -147,11 +147,35 @@ npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost
 ```shell
 npm install dotenv --save
 ```
-## 2.Open VS Code, create a file named .env in the root directory of the project, and add the INFURA_ID and PRIVATE_KEY
+## 2.Open VS Code, create a file named .env in the root directory of the project, and add the INFURA_ID and PRIVATE_KEY. INFURA_ID is obtained by registering an account on the INFURA official website. The PRIVATE_KEY is obtained from the MetaMask account.
 ```shell
 INFURA_ID=***   
 PRIVATE_KEY=**
 ```
+![image](https://github.com/user-attachments/assets/d7978966-c393-4964-9ff6-77c844050ca9)
+## 3.Replace the code below into the file hardhat.config.js
+```shell
+require("@nomicfoundation/hardhat-toolbox"); 
+require("dotenv").config(); 
+/** @type import('hardhat/config').HardhatUserConfig */ 
+module.exports = { 
+solidity: "0.8.24", 
+networks: { 
+hardhat: {}, 
+sepolia: { 
+url:
+ "https://sepolia.infura.io/v3/" + process.env.INFURA_ID, accounts: [`0x${process.env.PRIVATE_KEY}`], 
+ }, 
+ }, 
+ };
+```
+![image](https://github.com/user-attachments/assets/c2ccf80e-4045-4520-a794-7275e53aa6f3)
+## 4.Deploy to test network Sepolia
+```shell
+npx hardhat ignition deploy ./ignition/modules/Token.js --network sepolia
+```
+
+
 
 
 
