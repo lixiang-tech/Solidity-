@@ -6,7 +6,7 @@ https://hardhat.org/tutorial
 - Testing contracts
 - Deploying to localhost network
 - Deploying to remote networks
-# <span id = "Creating a new Hardhat project"> Creating a new Hardhat project </span>
+# Creating a new Hardhat project
 ## 1.Create a new folder
 ```shell
 mkdir hardhat-tutorial
