@@ -39,7 +39,7 @@ Open the Microsoft Store, search for Windows Terminal and install it.
 
 ![image](https://github.com/user-attachments/assets/69683358-383f-4828-98d6-8858ee16e66c)
 
-## 2.Configure the WSL system network and mirror it with the Windows system network
+## 2.Configure the WSL system network and mirror it with the Windows system network.Note that only Windows 11 systems support this configuration method.
 Create a Notepad in the C: \ User \ Username folder with the following content:
 ```shell
 [wsl2]
