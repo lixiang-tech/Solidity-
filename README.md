@@ -134,7 +134,7 @@ npx hardhat test
 ```
 ![image](https://github.com/user-attachments/assets/96a411dc-97c3-4d44-9c0e-8f9d1035830b)
 
-# <span id = "Testing contracts">Deploying to localhost network</span> 
+# <span id = "Deploying to localhost network">Deploying to localhost network</span> 
 ## 1.Create a file inside the ./ignition/modules directory called Token.js. Paste the code below into the file
 ```shell
 const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
