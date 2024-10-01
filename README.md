@@ -111,7 +111,7 @@ npx hardhat compile
 ```
 ![image](https://github.com/user-attachments/assets/563c2790-b75c-4019-9b77-38e097839f24)
 
-# Testing contracts
+# <span id = "Testing contracts">Testing contracts</span> 
 ## 1.Create a file inside the ./test directory called Token.js. Paste the code below into the file
 ```shell
 const { expect } = require("chai");
@@ -134,7 +134,7 @@ npx hardhat test
 ```
 ![image](https://github.com/user-attachments/assets/96a411dc-97c3-4d44-9c0e-8f9d1035830b)
 
-# Deploying to localhost network
+# <span id = "Testing contracts">Deploying to localhost network</span> 
 ## 1.Create a file inside the ./ignition/modules directory called Token.js. Paste the code below into the file
 ```shell
 const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
@@ -170,7 +170,7 @@ npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Token.js --network localhost
 ```
 ![image](https://github.com/user-attachments/assets/6dec1d88-9d92-4961-8997-68cab1b32247)
-# Deploying to remote networks. We’ll use Sepolia for this example.
+# <span id = "Deploying to remote networks">Deploying to remote networks</span>.We’ll use Sepolia for this example. 
 ## 1.To use environment variables to save sensitive information in Hardhat, install dotenv.
 ```shell
 npm install dotenv --save
