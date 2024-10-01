@@ -228,6 +228,7 @@ forge remappings > remappings.txt
 ```shell
 @openzeppelin/=lib/openzeppelin-contracts/contracts/
 ```
+![image](https://github.com/user-attachments/assets/9b4dd6e2-09c0-4f6f-a70b-808e36181c21)
 ### 5.Add the following code to the source file
 ```shell
 import "@openzeppelin/token/ERC20/IERC20.sol";
@@ -236,11 +237,13 @@ import "@openzeppelin/token/ERC20/IERC20.sol";
 ```shell
 forge build
 ```
+
 ## 9.Test
 ### 1.Test does not display detailed information
 ```shell
 forge test
 ```
+![image](https://github.com/user-attachments/assets/4c87376a-6089-49e3-9c38-c7c508664037)
 ### 2.Test and list detailed information
 ```shell
 forge test -vvvv
