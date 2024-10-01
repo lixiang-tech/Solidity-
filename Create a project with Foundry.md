@@ -229,7 +229,7 @@ forge remappings > remappings.txt
 @openzeppelin/=lib/openzeppelin-contracts/contracts/
 ```
 ![image](https://github.com/user-attachments/assets/9b4dd6e2-09c0-4f6f-a70b-808e36181c21)
-### 5.Add the following code to the source file.This code has been added to the source code.
+### 5.Add the following code to the source file.(This code has been added to the source code.)
 ```shell
 import "@openzeppelin/token/ERC20/IERC20.sol";
 ```
