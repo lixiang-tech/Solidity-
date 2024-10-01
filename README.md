@@ -1,4 +1,4 @@
-# References
+# Reference
 https://hardhat.org/tutorial
 # catalogue
 - <a href="#Creating a new Hardhat project">Creating a new Hardhat project</a>
@@ -6,6 +6,102 @@ https://hardhat.org/tutorial
 - <a href="#Testing contracts">Testing contracts</a>
 - <a href="#Deploying to localhost network">Deploying to localhost network</a>
 - <a href="#Deploying to remote networks">Deploying to remote networks</a>
+# Setting up the environment
+## 1.Installing WSL2（Windows Subsystem for Linux） on Windows11 system.
+Run the Windows command window as an administrator and enter the command：
+```shell
+wsl --install 
+``` 
+Enter your name and password as prompted, and restart the system after installation is complete.
+
+Open the Microsoft Store, search for Ubuntu, download Ubuntu 24.04 LTS, click the open button when the download is complete, enter your name and password as 
+prompted, and restart the system after installation is complete.
+
+Display the list of installed systems
+```shell
+wsl -l -v 
+``` 
+Remove the default installation of Ubuntu system and keep the latest system Ubuntu-24.04
+```shell
+wsl --unregister  Ubuntu  
+``` 
+Set the default version of the WSI system to 2
+ ```shell
+wsl --set-default-version 2 
+```
+Update and upgrade software packages  
+ ```shell
+sudo apt update && sudo apt upgrade 
+```
+Open the Microsoft Store, search for Windows Terminal and install it.
+
+![image](https://github.com/user-attachments/assets/69683358-383f-4828-98d6-8858ee16e66c)
+
+## 2.Configure the WSL system network and mirror it with the Windows system network
+Create a Notepad in the C: \ User \ Username folder with the following content:
+```shell
+[wsl2]
+networkingMode=mirrored
+```
+Save Notepad and change the file name to **.wslconfig**
+
+Close the WSI system and reopen it after 8 seconds
+```shell
+wsl --shutdown
+```
+## 3.Install zsh/oh-my-zsh
+Combined with oh-my-zsh and related plugins, zsh can achieve command highlighting, command completion, Git shortcut operations, and more.
+Update package
+```shell
+sudo apt update && sudo apt upgrade
+```
+Install zsh
+```shell
+sudo apt install zsh -y
+```
+Install oh-my-zsh
+```shell
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+```
+Install command completion and highlighting plugins
+```shell
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g' ~/.zshrc
+```
+Set zsh as the default shell
+```shell
+chsh -s /bin/zsh 
+```
+
+  
+    编辑配置文件vim .zshrc，不习惯 vim 的话，可以用 VSCode 打开code .zshrc，在最后加入：
+   # 列表形式显示所有文件详情
+    alias ll="ls -alF"
+    # 删除文件前需确认
+    alias rm="rm -i"
+（4）配置Git
+    Git 默认会忽略大小写，所以需要修改配置。
+    # 启用大小写敏感
+    git config --global core.ignorecase false
+   
+    常规配置：
+    # 配置用户名和密码
+    git config --global user.name "Your Name"
+    git config --global user.email "youremail@domain.com"
+（5）安装nvm/node/npm
+     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+     nvm install 20
+     node -v
+     npm -v
+（6）VSCode
+   安装远程开发扩展包https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+   Node.js扩展包https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack
+   使用code . 命令打开VSCode，注意窗口左下角显示WSL：Ubuntu-24.04
+（7）文件系统
+    需要注意的是我们现在有了两套系统，两者的文件类型并不一致，跨系统访问和传输文件的话效率会下降很多，最好各存各的，以用户目录为例：
+    如果在 Windows 上开发，就将文件放在：C:\Users\<UserName>\
+    如果在 Ubuntu 上开发，就将文件放在：\\wsl$\ubuntu\home\<UserName>\
 # <span id = "Creating a new Hardhat project">Creating a new Hardhat project</span> 
 ## 1.Create a new folder
 ```shell
