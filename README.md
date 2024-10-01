@@ -2,7 +2,7 @@
 https://hardhat.org/tutorial
 # catalogue
 - <a href="#Creating a new Hardhat project">Creating a new Hardhat project</a>
-- Writing and compiling smart contracts
+- <a href="#Writing and compiling smart contracts">Writing and compiling smart contracts</a>
 - Testing contracts
 - Deploying to localhost network
 - Deploying to remote networks
