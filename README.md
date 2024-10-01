@@ -1,12 +1,12 @@
 # References
 https://hardhat.org/tutorial
 # catalogue
-- <a href = "Creating a new Hardhat project">Creating a new Hardhat project</a>
+- <a href = "Creating a new Hardhat project"> Creating a new Hardhat project </a>
 - Writing and compiling smart contracts
 - Testing contracts
 - Deploying to localhost network
 - Deploying to remote networks
-# <span id = "Creating a new Hardhat project">Creating a new Hardhat project</span>
+# <span id = "Creating a new Hardhat project"> Creating a new Hardhat project </span>
 ## 1.Create a new folder
 ```shell
 mkdir hardhat-tutorial
