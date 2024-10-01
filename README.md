@@ -73,22 +73,40 @@ Set zsh as the default shell
 ```shell
 chsh -s /bin/zsh 
 ```
+Edit Profile **.zshrc**
+```shell
+vim .zshrc
+```
+Press the **i** key to start editing and adding content 
+```shell
+#Display all file details in a list format
+alias ll="ls -alF"
+#Confirm before deleting files
+alias rm="rm -i"
+```
+After editing, press the **ESC** key and then press **:wq** to exit editing
+## 4.Configure Git
+Git ignores case by default, so configuration needs to be modified. 
 
-  
-    编辑配置文件vim .zshrc，不习惯 vim 的话，可以用 VSCode 打开code .zshrc，在最后加入：
-   # 列表形式显示所有文件详情
-    alias ll="ls -alF"
-    # 删除文件前需确认
-    alias rm="rm -i"
-（4）配置Git
-    Git 默认会忽略大小写，所以需要修改配置。
-    # 启用大小写敏感
-    git config --global core.ignorecase false
-   
-    常规配置：
-    # 配置用户名和密码
-    git config --global user.name "Your Name"
-    git config --global user.email "youremail@domain.com"
+#Enable case sensitivity
+```shell
+git config --global core.ignorecase false
+```
+General configuration
+
+#Configure username and password
+```shell
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+```
+After saving the username and email, there is no need to enter them every time
+```shell
+git config --global credential.helper store
+```
+View configuration information
+```shell
+git config --global --list
+```
 （5）安装nvm/node/npm
      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
      nvm install 20
