@@ -133,7 +133,7 @@ Use **code .** Command to open VSCode, note that the window displays WSL: Ubuntu
 ```shell
 code .
 ```
-## 7.WSI file system
+## 7.WSL file system
 It should be noted that we now have two systems with different file types, and accessing and transferring files across systems will greatly reduce efficiency. It is best to store each system separately. Taking the user directory as an example:
 
 If developing on Windows, place the files in C: \ Users \<UserName>\ 
