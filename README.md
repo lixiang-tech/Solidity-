@@ -34,7 +34,7 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 ```shell
 code .
 ```
-# Writing and compiling smart contracts 
+# <span id = "#Writing and compiling smart contracts"Writing and compiling smart contracts</span> 
 ## 1.Create a file inside the ./contracts directory called Token.sol. Paste the code below into the file
 ```shell
 //SPDX-License-Identifier: UNLICENSED
