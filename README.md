@@ -3,9 +3,9 @@ https://hardhat.org/tutorial
 # catalogue
 - <a href="#Creating a new Hardhat project">Creating a new Hardhat project</a>
 - <a href="#Writing and compiling smart contracts">Writing and compiling smart contracts</a>
-- Testing contracts
-- Deploying to localhost network
-- Deploying to remote networks
+- <a href="#Testing contracts">Testing contracts</a>
+- <a href="#Deploying to localhost network">Deploying to localhost network</a>
+- <a href="#Deploying to remote networks">Deploying to remote networks</a>
 # <span id = "Creating a new Hardhat project">Creating a new Hardhat project</span> 
 ## 1.Create a new folder
 ```shell
