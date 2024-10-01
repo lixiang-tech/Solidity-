@@ -107,19 +107,39 @@ View configuration information
 ```shell
 git config --global --list
 ```
-（5）安装nvm/node/npm
-     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-     nvm install 20
-     node -v
-     npm -v
-（6）VSCode
-   安装远程开发扩展包https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
-   Node.js扩展包https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack
-   使用code . 命令打开VSCode，注意窗口左下角显示WSL：Ubuntu-24.04
-（7）文件系统
-    需要注意的是我们现在有了两套系统，两者的文件类型并不一致，跨系统访问和传输文件的话效率会下降很多，最好各存各的，以用户目录为例：
-    如果在 Windows 上开发，就将文件放在：C:\Users\<UserName>\
-    如果在 Ubuntu 上开发，就将文件放在：\\wsl$\ubuntu\home\<UserName>\
+## 5.Install nvm/node/npm
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+```
+```shell
+nvm install 20
+```
+```shell
+node -v
+```
+```shell
+npm -v
+```
+## 6.VSCode
+Install remote development extension package: 
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+Node.js extension package:
+
+https://marketplace.visualstudio.com/items?itemName=waderyan.nodejs-extension-pack
+
+Use **code .** Command to open VSCode, note that the window displays WSL: Ubuntu-24.04 in the bottom left corner
+```shell
+code .
+```
+## 7.WSI file system
+It should be noted that we now have two systems with different file types, and accessing and transferring files across systems will greatly reduce efficiency. It is best to store each system separately. Taking the user directory as an example:
+
+If developing on Windows, place the files in C: \ Users \<UserName>\ 
+
+If developing on Ubuntu, place the files in: \ \ wsl $\ ubuntu \ home \<UserName>\
+
 # <span id = "Creating a new Hardhat project">Creating a new Hardhat project</span> 
 ## 1.Create a new folder
 ```shell
