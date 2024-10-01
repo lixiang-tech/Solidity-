@@ -1,18 +1,18 @@
 # Creating a New Project
-## Update to the latest version
+## 1.Update to the latest version
 ```shell
 foundryup
 ```
-## Initialize a project named hello_foundry 
+## 2.Initialize a project named hello_foundry 
 ```shell
 forge init hello_foundry
 cd hello_foundry
 ```
-## Open VScode
+## 3.Open VScode
 ```shell
 code .
 ```
-## Create a file inside the ./src directory called Stake.sol. Paste the code below into the file
+## 4.Create a file inside the ./src directory called Stake.sol. Paste the code below into the file
 ```shell
 // SPDX-License-Identifier: MIT---------------------------
 pragma solidity ^0.8.17;
@@ -42,7 +42,8 @@ contract StakePool {
     }
 }
 ```
-## Create a file inside the ./test directory called Stake.sol. Paste the code below into the file
+![image](https://github.com/user-attachments/assets/01be20ae-73bb-4232-996b-074c684d193f)
+## 5.Create a file inside the ./test directory called Stake.sol. Paste the code below into the file
 ```shell
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -69,7 +70,8 @@ contract StakeTest is Test {
     }
 }
 ```
-## Create a mock folder in the .test directory and a MockERC20.sol file in the mock folder
+![image](https://github.com/user-attachments/assets/91d22b72-85eb-4ab5-b9f1-6348e73d97b6)
+## 6.Create a mock folder in the .test directory and a MockERC20.sol file in the mock folder
 ```shell
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
@@ -208,20 +210,8 @@ contract MockERC20 is Token {
     }
 }
 ```
-## Test
-### 1.Test does not display detailed information
-```shell
-forge test
-```
-### 2.Test and list detailed information
-```shell
-forge test -vvvv
-```
-## Build
-```shell
-forge build
-```
-## Dependencies
+![image](https://github.com/user-attachments/assets/f345faf5-c88b-4a30-8916-780476c289b8)
+## 7.Dependencies
 ### 1.Install dependencies
 ```shell
 forge install transmissions11/solmate Openzeppelin/openzeppelin-contracts --no-commit
@@ -242,3 +232,17 @@ forge remappings > remappings.txt
 ```shell
 import "@openzeppelin/token/ERC20/IERC20.sol";
 ```
+## 8.Build
+```shell
+forge build
+```
+## 9.Test
+### 1.Test does not display detailed information
+```shell
+forge test
+```
+### 2.Test and list detailed information
+```shell
+forge test -vvvv
+```
+
