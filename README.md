@@ -1,5 +1,11 @@
 # References
 https://hardhat.org/tutorial
+# catalogue
+- Creating a new Hardhat project
+- Writing and compiling smart contracts
+- Testing contracts
+- Deploying to localhost network
+- Deploying to remote networks
 # Creating a new Hardhat project
 ## 1.Create a new folder
 ```shell
