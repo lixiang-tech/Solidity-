@@ -1,26 +1,30 @@
 # Creating a New Project
-## 1.Update to the latest version
+## Update to the latest version
 ```shell
 foundryup
 ```
-## 2.Initialize a project named hello_foundry 
+## Initialize a project named hello_foundry 
 ```shell
 forge init hello_foundry
 cd hello_foundry
 ```
-## 3.Open VScode
+## Open VScode
 ```shell
 code .
 ```
-## 4.Test
+## Test
 ```shell
 forge test
 ```
-## 5.Build
+### Test and list detailed information
+```shell
+forge test -vvvv
+```
+## Build
 ```shell
 forge build
 ```
-## 6.Dependencies
+## Dependencies
 ### 1.Install dependencies
 ```shell
 forge install transmissions11/solmate Openzeppelin/openzeppelin-contracts --no-commit
