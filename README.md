@@ -1,12 +1,14 @@
 # Reference
 https://hardhat.org/tutorial
 # catalogue
+- <a href="#Setting up the environment">Setting up the environment</a>
 - <a href="#Creating a new Hardhat project">Creating a new Hardhat project</a>
 - <a href="#Writing and compiling smart contracts">Writing and compiling smart contracts</a>
 - <a href="#Testing contracts">Testing contracts</a>
 - <a href="#Deploying to localhost network">Deploying to localhost network</a>
 - <a href="#Deploying to remote networks">Deploying to remote networks</a>
-# Setting up the environment
+
+# <span id = "Setting up the environment">Setting up the environment</span> 
 ## 1.Installing WSL2（Windows Subsystem for Linux） on Windows11 system.
 Run the Windows command window as an administrator and enter the command：
 ```shell
