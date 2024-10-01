@@ -1,7 +1,7 @@
 # References
 https://hardhat.org/tutorial
 # catalogue
-- <a href = "Creating a new Hardhat project"> Creating a new Hardhat project</a>
+- <a href = "Creating a new Hardhat project">Creating a new Hardhat project</a>
 - Writing and compiling smart contracts
 - Testing contracts
 - Deploying to localhost network
