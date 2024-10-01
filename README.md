@@ -6,7 +6,7 @@ https://hardhat.org/tutorial
 - Testing contracts
 - Deploying to localhost network
 - Deploying to remote networks
-# Creating a new Hardhat project 
+# <span id = "Creating a new Hardhat project"Creating a new Hardhat project</span> 
 ## 1.Create a new folder
 ```shell
 mkdir hardhat-tutorial
@@ -34,7 +34,7 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 ```shell
 code .
 ```
-# <span id = "#Writing and compiling smart contracts"Writing and compiling smart contracts</span> 
+# <span id = "Writing and compiling smart contracts"Writing and compiling smart contracts</span> 
 ## 1.Create a file inside the ./contracts directory called Token.sol. Paste the code below into the file
 ```shell
 //SPDX-License-Identifier: UNLICENSED
