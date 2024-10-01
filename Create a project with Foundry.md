@@ -12,11 +12,13 @@ cd hello_foundry
 ```shell
 code .
 ```
+
 ## Test
+### 1.Test does not display detailed information
 ```shell
 forge test
 ```
-### Test and list detailed information
+### 2.Test and list detailed information
 ```shell
 forge test -vvvv
 ```
