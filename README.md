@@ -1,6 +1,8 @@
 # Testnet Faucets/领取测试币网址
 https://faucets.chain.link/sepolia
 # Cyfrin Updraft courses Quiz
+## Blockchain Basic
+https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to-updraft
 **Smart contract：** A smart contract is an agreement that is deployed on a decentralized blockchain. Once deployed, it cannot be altered, and its terms are public.
 
 **Blockchain：** A digital ledger that records transactions across many computers in a secure and decentralized manner.
