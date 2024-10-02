@@ -1,6 +1,6 @@
-# Cyfrin Updraft courses Quiz
-## Blockchain Basic
+# Blockchain Basic
 Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to-updraft
+## Cyfrin Updraft courses Quiz
 
 **Smart contract：** A smart contract is an agreement that is deployed on a decentralized blockchain. Once deployed, it cannot be altered, and its terms are public.
 
@@ -18,12 +18,17 @@ transaction fee = gas price * gas fee
 
 **What could be the consequence of a compromised private key in a blockchain system?** The attacker gains full control over the wallet and associated assets.
 
----
+## Blockchains structure
+
+Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/how-do-blockchains-work
+
+## Private key/Public key/Singing
+
 Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/signing-ethereum-transactions
 
 Private key generates public key through elliptic curve algorithm.
 
 Sign data with a private key and verify signed data with a public key.
 
----
+
 
