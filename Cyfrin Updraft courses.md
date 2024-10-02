@@ -17,3 +17,13 @@ https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to-updraft
 transaction fee = gas price * gas fee
 
 **What could be the consequence of a compromised private key in a blockchain system?** The attacker gains full control over the wallet and associated assets.
+
+---
+https://updraft.cyfrin.io/courses/blockchain-basics/basics/signing-ethereum-transactions
+
+Private key generates public key through elliptic curve algorithm.
+
+Sign data with a private key and verify signed data with a public key.
+
+---
+
