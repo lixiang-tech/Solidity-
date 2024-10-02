@@ -39,9 +39,9 @@ EIP1559: https://www.youtube.com/watch?v=MGemhK9t44Q
 
 base fee: The minimum fee that must be paid in the transaction.
 
-**Transaction Fee** (pay to miners)  = (**Block Base Fee Per Gas** + **MaxPriorityFee Per Gas**) * **Gas Used**
+**Transaction Fee** = (**Block Base Fee Per Gas** + **MaxPriorityFee Per Gas**) * **Gas Used**
 
-**Base Fee** = **Block Base Fee Per Gas** * **Gas Use**  was ultimately burned.
+**Base Fee** = **Block Base Fee Per Gas** * **Gas Use**  was ultimately burned. Pay the remaining gas in the transaction fee to the miner.
 
 
 
