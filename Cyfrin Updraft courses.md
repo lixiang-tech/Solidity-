@@ -14,8 +14,6 @@ Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to
 
 **What is the role of the gas price in Ethereum transactions?** To set the cost per unit of gas specified for the transaction.
 
-transaction fee of pay to miners = gas price * gas used 
-
 **What could be the consequence of a compromised private key in a blockchain system?** The attacker gains full control over the wallet and associated assets.
 
 ## Blockchains structure
@@ -30,7 +28,12 @@ Private key generates public key through elliptic curve algorithm.
 
 Sign data with a private key and verify signed data with a public key.
 
-Secret Phrase >> Private key ||| Public key / Address   
+Secret Phrase >> Private key ||| Public key / Address  
+
+## Gas
+Reference:https://updraft.cyfrin.io/courses/blockchain-basics/basics/gas-in-depth
+
+transaction fee of pay to miners = gas price * gas used 
 
 
 
