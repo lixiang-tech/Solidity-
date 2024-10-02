@@ -1,6 +1,6 @@
 # Blockchain Basic
 Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to-updraft
-## Cyfrin Updraft courses Quiz
+## Courses Quiz
 
 **Smart contract：** A smart contract is an agreement that is deployed on a decentralized blockchain. Once deployed, it cannot be altered, and its terms are public.
 
