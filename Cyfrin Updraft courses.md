@@ -31,9 +31,11 @@ Sign data with a private key and verify signed data with a public key.
 Secret Phrase >> Private key ||| Public key / Address  
 
 ## Gas
-Reference:https://updraft.cyfrin.io/courses/blockchain-basics/basics/gas-in-depth
+Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/gas-in-depth
 
 transaction fee of pay to miners = gas price * gas used 
+
+EIP1559: https://www.youtube.com/watch?v=MGemhK9t44Q
 
 
 
