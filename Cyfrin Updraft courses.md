@@ -14,7 +14,7 @@ Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to
 
 **What is the role of the gas price in Ethereum transactions?** To set the cost per unit of gas specified for the transaction.
 
-transaction fee = gas price * gas fee
+transaction fee = gas price * gas used
 
 **What could be the consequence of a compromised private key in a blockchain system?** The attacker gains full control over the wallet and associated assets.
 
