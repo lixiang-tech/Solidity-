@@ -30,7 +30,7 @@ Private key generates public key through elliptic curve algorithm.
 
 Sign data with a private key and verify signed data with a public key.
 
-Secret Phrase >> Private key ||| Public key/Address   
+Secret Phrase >> Private key ||| Public key / Address   
 
 
 
