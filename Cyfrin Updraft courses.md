@@ -33,9 +33,17 @@ Secret Phrase >> Private key ||| Public key / Address
 ## Gas
 Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/gas-in-depth
 
-transaction fee of pay to miners = gas price * gas used 
+**Transaction Fee** of pay to miners = **Gas Price Per Gas** * **Gas Used**
 
 EIP1559: https://www.youtube.com/watch?v=MGemhK9t44Q
+
+base fee: The minimum fee that must be paid in the transaction.
+
+**Transaction Fee** of pay to miners  = (**Block Base Fee Per Gas** + **MaxPriorityFee Per Gas**) * **Gas Used**
+
+The base fee was ultimately burned.
+
+
 
 
 
