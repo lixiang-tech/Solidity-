@@ -49,6 +49,9 @@ Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/l1s-l2s-an
 
 A **Layer 2** is any application built on outside an L1 blockchain that _hooks back into it_. There are different types of Layer 2, for example **Chainlink**, a decentralized Oracle networks and event indexing networks like **The Graph**, which enable applications to access on-chain data. But the most popular type of L2 is the **rollup**, or **L2 chain**.
 
+**Rollups** are L2 scaling solutions that enable to increase the number of transactions on Ethereum by bundling multiple transactions into one, reducing gas costs.
+
+
 
 
 
