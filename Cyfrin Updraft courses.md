@@ -43,6 +43,13 @@ base fee: The minimum fee that must be paid in the transaction.
 
 **Base Fee** = **Block Base Fee Per Gas** * **Gas Use**  was ultimately burned. Pay the remaining gas in the transaction fee to the miner.
 
+## L1s L2s And Rollups
+
+Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/l1s-l2s-and-rollups?lesson_format=video
+
+A **Layer 2** is any application built on outside an L1 blockchain that _hooks back into it_. There are different types of Layer 2, for example **Chainlink**, a decentralized Oracle networks and event indexing networks like **The Graph**, which enable applications to access on-chain data. But the most popular type of L2 is the **rollup**, or **L2 chain**.
+
+
 
 
 
