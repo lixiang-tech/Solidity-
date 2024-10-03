@@ -16,6 +16,18 @@ Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/welcome-to
 
 **What could be the consequence of a compromised private key in a blockchain system?** The attacker gains full control over the wallet and associated assets.
 
+**What is the purpose of a secret phrase/seed phrase/mnemonic phrase?** It is used to generate wallets, each wallet with their own private key. Access to the secret phrase means access to all generated wallets.
+
+**What is the primary purpose of a blockchain block's hash?** To link the block to the previous one and ensure data integrity.
+
+**What is the primary benefit of rollup solutions?** They reduce transaction fees and congestion by processing transactions off the main chain.
+
+**What is a zero-knowledge proof?** A method for proving knowledge of something without revealing the thing itself.
+
+**What is a "Rollup stage"?** A categorization system used to describe the decentralization and maturity of a rollup.
+
+**What role does a "Sequencer" play in a rollup?** Orders and bundles transactions before they are submitted to the main blockchain.
+
 ## Blockchains structure
 
 Reference: https://updraft.cyfrin.io/courses/blockchain-basics/basics/how-do-blockchains-work
