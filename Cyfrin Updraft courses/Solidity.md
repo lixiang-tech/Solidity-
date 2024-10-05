@@ -5,7 +5,13 @@ SimpleStorage.sol :
 contract SimpleStorage {}
 
 contract SimpleStorage2 {}
+
+contract SimpleStorage3 {}
+
+contract SimpleStorage4 {}
 ```
 
+StorageFactory.sol :
+```solidity
 import {SimpleStorage,SimpleStorage2} from "./SimpleStorage.sol"
-
+```
