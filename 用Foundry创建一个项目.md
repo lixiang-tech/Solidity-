@@ -1,7 +1,7 @@
-# Reference
+# 参考网址
 https://book.getfoundry.sh/
-# Creating a New Project
-## 1.Update to the latest version
+# 创建一个项目
+## 1.更新到最新版本
 ```shell
 foundryup
 ```
