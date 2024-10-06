@@ -1,4 +1,4 @@
-# revoke
+# 撤销
 ctrl+z
-# Batch annotation
+# 将选中文本注释
 ctrl+/
