@@ -1,6 +1,6 @@
-# Reference
+# 参考网址
 https://hardhat.org/tutorial
-# catalogue
+# 目录
 - <a href="#Setting up the environment">Setting up the environment</a>
 - <a href="#Creating a new Hardhat project">Creating a new Hardhat project</a>
 - <a href="#Writing and compiling smart contracts">Writing and compiling smart contracts</a>
