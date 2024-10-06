@@ -25,7 +25,11 @@ import {SimpleStorage,SimpleStorage2} from "./SimpleStorage.sol"
 # 关键词 override virtual
 关键词override用在父合约函数中，关键词virtual用在子合约函数中
 
+父合约中：
+
 ![图片](https://github.com/user-attachments/assets/f601277c-b5d7-4094-8f32-01b0f087fd95)
+
+子合约中：
 
 ![图片](https://github.com/user-attachments/assets/917bf1b9-5afd-4b3c-aa6b-1f371e2f6c7f)
 
