@@ -33,6 +33,10 @@ import {SimpleStorage,SimpleStorage2} from "./SimpleStorage.sol"
 
 ![图片](https://github.com/user-attachments/assets/917bf1b9-5afd-4b3c-aa6b-1f371e2f6c7f)
 
+参考网址：https://updraft.cyfrin.io/courses/solidity/fund-me/solidity-smart-contract-interfaces
+
+VBI interface： https://github.com/smartcontractkit/chainlink/blob/develop/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol
+
 
 
 
