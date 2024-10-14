@@ -1,5 +1,5 @@
 # 快速复制一行
-![图片](https://github.com/user-attachments/assets/8aa915f5-4323-4e0c-ac18-0dba8cdf2c9d)
+![image](https://github.com/user-attachments/assets/92d23394-8854-4b77-887d-3ce27b900fc1)
 # 选定多个相同的单词
 ![图片](https://github.com/user-attachments/assets/f3eaba2f-2d09-4fec-9354-1e2c42566ec0)
 # 添加多个光标
