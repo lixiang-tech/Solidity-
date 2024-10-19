@@ -1,3 +1,6 @@
+# vscode常用插件
+
+# vscode常用的快捷键 
 ## 快速复制一行
 快捷键： shift+alt+ 下箭头(上箭头) 或者 ctrl+c  然后 ctrl+v 
 
@@ -16,21 +19,21 @@
 快捷键：  ctrl + h
 
 ![图片](https://i0.hdslb.com/bfs/article/3be36a5eb8a5cf7f6845a7bc3b8c16c202a406c4.gif@1256w_648h_!web-article-pic.avif)
-# 快速定位到某一行
+## 快速定位到某一行
 当我们页面比较长的时候，上下滚动页面布方便，其实我们可以利用快捷键，快速的调到指定的行数上。
 快捷键：  ctrl + g 
 
 ![图片](https://i0.hdslb.com/bfs/article/2eb1e263469b1bc4d6ccaac99fa001bd60bab243.gif@1256w_784h_!web-article-pic.avif)
-# 选择某个区块
+## 选择某个区块
 可以选择一个区块进行操作
 快捷键：  按住shift + alt  然后拖动鼠标 
 
 ![图片](https://i0.hdslb.com/bfs/article/b540b4d1a6e0b4d2008620540ebde3dfbe6265ca.gif@!web-article-pic.avif)
-# 放大缩小整个编辑器界面
+## 放大缩小整个编辑器界面
 快捷键：  ctrl +   +  /  -    ctrl +  加号或者减号
 
 ![图片](https://i0.hdslb.com/bfs/article/4e468ac4893bbf98beb98614b689ee2b72e812db.gif@1256w_876h_!web-article-pic.avif)
-# 自定义快捷键
+## 自定义快捷键
 有些快捷键，我们使用不习惯，其实我们可以自定义快捷键的。
 比如js 的多行注释是 shift + alt  + a  ，我们想修改为 ctrl + shfit +  /   
 设置方法：   管理按钮  ---   键盘快捷方式  ---  输入  shift + alt  + a  找到这个快捷键  ----- 点击编辑按钮  ---- 直接按下  ctrl + shift  +  /     ---- 最后按下回车 修改完毕。
