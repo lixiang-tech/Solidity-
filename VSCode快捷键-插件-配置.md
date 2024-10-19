@@ -64,6 +64,8 @@
 设置方法：   管理按钮  ---   键盘快捷方式  ---  输入  shift + alt  + a  找到这个快捷键  ----- 点击编辑按钮  ---- 直接按下  ctrl + shift  +  /     ---- 最后按下回车 修改完毕。
 
 ![图片](https://i0.hdslb.com/bfs/article/070e4f32b7326196062f020bbc3a91b30c7e470c.gif@1256w_874h_!web-article-pic.avif)
+## VSCode 分屏
+windows图标按钮 加 ← 或 → 按钮
 
 
 
