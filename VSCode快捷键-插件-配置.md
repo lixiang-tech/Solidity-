@@ -1,6 +1,30 @@
 # vscode常用插件
 ## Chinese (Simplified)  汉化 
-![image](https://i0.hdslb.com/bfs/article/bf1570da09ae51a078581e1b2924264642aff88d.png@1256w_242h_!web-article-pic.avif）
+![image](https://i0.hdslb.com/bfs/article/bf1570da09ae51a078581e1b2924264642aff88d.png@1256w_242h_!web-article-pic.avif)
+## Auto Rename Tag 
+修改开始标签，结束标签跟着自动变化，比较好用。 
+![](https://i0.hdslb.com/bfs/article/110e9efeecca99aad6876bc8e83da2a5b2245ff9.png@1256w_286h_!web-article-pic.avif)
+## One Dark Pro   颜色主题 
+![image](https://i0.hdslb.com/bfs/article/cf24793ac2e31d5e9cdf080492143ceed35246e1.png@1256w_260h_!web-article-pic.avif)
+## 格式化代码（vscode系统自带） 
+1. 点击管理按钮---选择里面的设置命令
+2.  选择用户 --->  文本编辑器  --->  正在格式化  --->  勾选formatOnType,formatOnSave,formatOnPaste.
+![image](![image](https://github.com/user-attachments/assets/868dbdb4-04fb-495b-9036-5f99aa2528cd)
+![image](https://i0.hdslb.com/bfs/article/98b24e9acd4ccda6774763efe1ed1bcac1669d94.png@1256w_880h_!web-article-pic.avif)
+## open in browser   浏览器预览页面  
+编写完代码，需要浏览器预览，可以安装这个插件 
+![image](https://i0.hdslb.com/bfs/article/17a8e27dcaa6dc39a20d45136e8862bc1e7b6db9.png@1256w_274h_!web-article-pic.avif)
+![image](https://i0.hdslb.com/bfs/article/9cc36872cff258e589edc90e6683ca055ba1ce9e.png@1256w_730h_!web-article-pic.avif)
+## Live Server   实时预览（推荐） 
+修改完代码，自动更新浏览器，需要先用vscode 打开文件所在的目录文件夹 
+![image](https://i0.hdslb.com/bfs/article/c149cb25a3f2096a5088533fac6f1145043f484d.png@1256w_244h_!web-article-pic.avif)
+## vscode-icons   设置文件图标主题 
+![image](https://i0.hdslb.com/bfs/article/082202d66f4a816aa0d5c54c07429a044f37ddf9.png@1256w_260h_!web-article-pic.avif)
+## Easy LESS   编译less文件 
+我们写的less不能直接引入到html文件中， 通过这个插件可以自动帮我们生成 css文件 
+![image](https://i0.hdslb.com/bfs/article/af1827d7d9ebb7daf90b1b24e3aefe3d9bf3aab7.png@1256w_264h_!web-article-pic.avif)
+## 会了吧   翻译插件
+![image](https://i0.hdslb.com/bfs/article/a38d9d4cbe9156e3c06b899ad283eaf437f04cba.png@1256w_228h_!web-article-pic.avif)
 # vscode常用的快捷键 
 ## 快速复制一行
 快捷键： shift+alt+ 下箭头(上箭头) 或者 ctrl+c  然后 ctrl+v 
